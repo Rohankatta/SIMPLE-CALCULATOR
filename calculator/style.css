@@ -1,0 +1,138 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    background-color: #636363;
+}
+
+.calculator{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px 5px white, 0 0 5px 5px white;
+    border-radius: 30px;
+}
+
+.calc-container{
+    background-color: #1d1d1d;
+
+    width: 300px;
+    height: auto;
+
+    border-radius: 30px;
+}
+
+.output{
+    width: 100%;;
+}   
+
+.operation{
+    width: 300px;
+    height: 70px;
+
+    color: #878787;
+
+    font-size: 1.9em;
+    font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
+}
+.operation .value{
+    position: absolute;
+
+    bottom: 5px;
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result{
+    width: 300px;
+    height: 140px;
+
+    color: #FFF;
+
+    font-size: 2.7em;
+    font-weight: bold;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.result .value{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.input{
+    background-color: #FFF;
+    border: 1px solid #1d1d1d;
+    height: 340px;
+    border-radius: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row button{
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.5em;
+
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+
+    margin : 8px;
+
+    cursor: pointer;
+        border-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border-style: none;
+        transition-duration: 0.4s;
+        box-shadow: #636363;
+}
+
+.row button:hover{
+    background:  #636363;
+        box-shadow: 0 0 10px #636363, 0 0 40px #636363, 0 0 80px #636363;
+        color: white;
+}
+
+.row #calculate{
+    color: #FFF;
+    background-color: #1d1d1d;
+    width : 121px;
+    border-radius: 50px;
+}
+.row #delete{
+    color: #FFF;
+    background-color:orange;
+}
+
+#division, #multiplication, #subtraction, #addition {
+    color: orange;
+}
