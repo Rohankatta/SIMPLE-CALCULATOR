@@ -15,12 +15,11 @@ pipeline {
         stage('deploy') {
             steps {
                 echo 'this is the deploy phase'
-            }
         }
     }
     post{
-        success{
-            echo 'biuld successful'
+        always{
+            echo 'always post attribute'
         }
     }
 }
