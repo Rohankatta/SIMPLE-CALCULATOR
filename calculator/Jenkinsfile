@@ -17,6 +17,11 @@ pipeline {
                 echo 'this is the deploy phase'
             }
         }
+        stage('finall') {
+            steps {
+                echo 'this is the finall phase'
+            }
+        }
     }
     post{
         always{
